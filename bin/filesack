@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 #
-# $Id: filesack,v 1.6 2004/10/23 00:48:51 alex Exp $
+# $Id: filesack,v 1.7 2004/10/23 18:51:49 alex Exp $
 
 use Algorithm::Knapsack;
 
@@ -24,7 +24,8 @@ my $knapsack = Algorithm::Knapsack->new(
 );
 $knapsack->compute();
 foreach my $solution ($knapsack->solutions()) {
-    print join("\n\t", $knapsack->{max}, map { $files[$_] } @{$solution}),
+    print join("\n\t", $capacity - $knapsack->{emptiness},
+                       map { $files[$_] } @{$solution}),
           "\n";
 }
 

@@ -5,3 +5,4 @@ README
 bin/filesack
 lib/Algorithm/Knapsack.pm
 t/test.t
+META.yml                                 Module meta-data (added by MakeMaker)

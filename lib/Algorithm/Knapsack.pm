@@ -1,11 +1,11 @@
-# $Id: Knapsack.pm,v 1.10 2004/10/23 14:21:27 alex Exp $
+# $Id: Knapsack.pm,v 1.11 2004/10/23 18:52:19 alex Exp $
 
 package Algorithm::Knapsack;
 
 use strict;
 use vars qw($VERSION);
 
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 =head1 NAME
 
